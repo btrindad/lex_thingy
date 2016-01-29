@@ -38,19 +38,19 @@ D		[0-9]
 
 [A-Z]            { printf( "A lone capital %s %u\n", yytext, strlen(yytext) ); }
 
-[1-9][0-9]*             { /* Integers without superfluous leading zeros */ }
+[1-9][0-9]*             { printf("Found integer %s\n", yytext); }
 
 
-(\_[A-Za-z])+(\_[A-Za-z0-9])*          { /* C identifier */ }
+(\_[A-Za-z])+(\_[A-Za-z0-9])*          { printf("Found C identifier %s\n", yytext); }
 
 
 ([1-9][0-9]+|0)\.[0-9]*      {printf("Found float %s\n", yytext); }
 
-[^.]			{ /* Accept any non printable character */ }
+[^.]			{ printf("Found non-ascii character %s\n", yytext); }
 
-\[\“\”\”\]		{ /* Accept ["""] */ }
+\[\“\”\”\]		{ printf("Found [\"\"\"] %s\n", yytext); }
 
-x{12345}		{ /* Accept shitload of X's */ }
+x{12345}		{ printf("Found 12345 x's %s\n", yytext); }
 
 %%
 
