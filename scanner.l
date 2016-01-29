@@ -46,6 +46,11 @@ D		[0-9]
 
 ([1-9][0-9]+|0)\.[0-9]*      {printf("Found float %s\n", yytext); }
 
+[^.]			{ /* Accept any non printable character */ }
+
+\[\“\”\”\]		{ /* Accept ["""] */ }
+
+x{12345}		{ /* Accept shitload of X's */ }
 
 %%
 
