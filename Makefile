@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-CC=gcc -pedantic -ansi #-DNDEBUG
+CC=gcc #-pedantic -ansi #-DNDEBUG
 CFLAGS=-g
 LDFLAGS=-l fl
 LEX=flex
