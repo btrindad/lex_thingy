@@ -3,3 +3,62 @@
 03.235
 .234
 0.
+=======
++.19003
+.8139000
+-04384
+/* an everyday plain vanilla comment */
+x
+013030  /* DOUBLE */
+/***/
+.e3   /* word */
+-00.3245
+
+-0    /* INTEGER */
+
+
+/* a comment * /* that ends with */
++00   /* DOUBLE */
+/* C style multiline comment without
+ * an embedded ending mark (* and / next
+ * to each other)
+ **/
+
+
+
+00000.0
+
+/* C identifier */
++0    /* INTEGER */
+0e0
+
+theVariable
+-.91030
+
+
+~aComplementaryVariable
+
+1e-12
+
+-0000.0
+-439
+0     /* INTEGER */
+
+0e0
+/**/
+1
+     /****
+ a comment
+ ****/
+
+_ab__c
++1
+
+_________________________what_identifier_len_limit
+/* Integers without superfluous leading zeros */
+
+/*/ a Texas comment? /*/
+/* C (C++, Java?) floating point specification (less valid integers in this scanner) */
+e1
+SHOUTING
++847
